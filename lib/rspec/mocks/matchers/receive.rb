@@ -6,6 +6,7 @@ module RSpec
       # @private
       class Receive
         include Matcher
+        include RSpec::Matchers::Composable
 
         def initialize(message, block)
           @message                 = message
